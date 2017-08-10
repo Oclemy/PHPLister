@@ -1,0 +1,294 @@
+/* Downloaded from http://codingstudents.info/ */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', 'Heveltica Neue', helvetica, sans-serif;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.45) 5%, rgba(255, 255, 255, 0.01) 35%, rgba(255, 255, 255, 0.35) 90%), url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cubes.png);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.45) 5%, rgba(255, 255, 255, 0.01) 35%, rgba(255, 255, 255, 0.35) 90%), url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cubes.png);
+}
+
+
+
+.header .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media only screen and (min-width: 600px) {
+  .header .container-fluid {
+    height: 120px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.header .brand {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+@media only screen and (min-width: 600px) {
+  .header .brand {
+    margin-top: -10px;
+    margin-left: 20px;
+  }
+}
+.header .brand span {
+  display: inline-block;
+  padding: 4px;
+  border: 4px solid #111;
+  color: #111;
+}
+.header .nav-items {
+  padding: 0;
+  border-bottom: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+.header .nav-items li {
+  margin-right: 16px;
+  display: block;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 600px) {
+  .header .nav-items li {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .header .nav-items {
+    width: 70%;
+    margin-left: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+.header .nav-items a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #888;
+  font-weight: 300;
+  border: 0;
+  border-radius: 0;
+  -webkit-transition: .35s ease;
+  transition: .35s ease;
+}
+.header .nav-items a.sign-up {
+  color: #fff !important;
+  background-color: dodgerblue !important;
+  opacity: .85;
+  padding: 8px 22px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+}
+.header .nav-items a.sign-up:hover {
+  opacity: 1;
+}
+.header .nav-items a.sign-up:after {
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  .header .nav-items a {
+    overflow: hidden;
+    padding: 0 7px;
+  }
+  .header .nav-items a:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: dodgerblue;
+    -webkit-transition: .35s ease-out;
+    transition: .35s ease-out;
+  }
+  .header .nav-items a:hover:after {
+    width: 100%;
+  }
+}
+.header .nav-items a:hover {
+  background-color: transparent;
+  color: dodgerblue;
+}
+
+.jumbotron {
+  height: 400px;
+  text-align: center;
+  background-color: transparent;
+}
+.jumbotron .container {
+  padding: 0 40px;
+}
+@media only screen and (min-width: 600px) {
+  .jumbotron {
+    padding-top: 120px;
+    height: 600px;
+  }
+}
+.jumbotron .scroll {
+  display: inline-block;
+  margin-top: 120px;
+  font-size: 40px;
+  color: #7a7a7a;
+  cursor: pointer;
+}
+.jumbotron .scroll:hover {
+  color: #1a1a1a;
+}
+.jumbotron h1 {
+  margin-bottom: 20px;
+  font-size: 56px;
+  line-height: 1;
+}
+.jumbotron p {
+  display: none;
+  font-size: 25px;
+}
+@media only screen and (min-width: 600px) {
+  .jumbotron p {
+    display: block;
+  }
+}
+.jumbotron strong {
+  color: orange;
+  font-size: 120%;
+}
+.jumbotron .btn {
+  border-radius: 0;
+  display: inline-block;
+  margin-top: 40px;
+  padding: 0 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: dodgerblue;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: .15s ease-in;
+  transition: .15s ease-in;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 0;
+  height: 50px;
+  line-height: 50px;
+}
+.jumbotron .btn:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  height: 53px;
+  box-shadow: inset 0 -6px 0 rgba(0, 0, 0, 0.25);
+}
+
+.section {
+  padding: 40px 0 80px;
+  text-align: center;
+}
+@media only screen and (min-width: 600px) {
+  .section {
+    padding: 100px 0;
+  }
+}
+.section .heading {
+  margin: 0 0 42px;
+  font-size: 38px;
+  text-align: center;
+}
+.section h3 {
+  margin-bottom: 18px;
+  font-size: 24px;
+}
+.section .btn {
+  padding: 8px 40px;
+  background-color: dodgerblue;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.section .btn:hover {
+  background-color: #111;
+}
+
+.footer {
+  padding: 10px 0 60px;
+  background: rgba(0, 0, 0, 0.05);
+}
+.footer h4 {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.footer address {
+  font-size: 12px;
+}
+.footer a {
+  position: relative;
+  top: 5px;
+  color: dodgerblue;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: orange;
+}
+.item {
+    border-width: 2px; 
+    border-radius: 15px;
+    padding: 15px;
+    width: 600px;
+    height: 300px;
+    box-shadow: 5px 10px 10px 5px #888888;
+     text-align: left; 
+    overflow:hidden;
+}
+
+img{
+   float:left;
+   padding:5px;
+}
+.item-bottom {
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
